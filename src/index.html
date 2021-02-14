@@ -1,261 +1,410 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Mi Página Personal</title>
-  <link rel="icon" type="image/png" href="../assets/Foto Personal.png" />
-  <link rel="stylesheet" href="style.css">
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Personal Webpage</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="../assets/Foto Personal.jpg" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-<body style="background-color: rgb(243, 234, 234)">
-  <header style="background-color: rgb(240, 224, 224)">
-    <table>
-      <tr>
-        <td width="700">
-          <img
-            src="../assets/Foto Personal.png"
-            alt="Fotografia Personal"
-            height="185"
-            width="147" class="slidein"
-          />
-        </td>
-        <td><h1>Mi Página Personal</h1></td>
-      </tr>
-    </table>
-  </header>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <nav style="background-color: rgb(240, 224, 224)">
-    <table cellspacing="15">
-      <tr>
-        <td width="100" align="center"><a href="#Bienvenida">Bienvenida</a></td>
-        <td align="center"><a href="#Datos_B">Datos biográficos</a></td>
-        <td align="center"><a href="#Datos_A">Datos académicos</a></td>
-        <td align="center"><a href="#Sitios">Sitios de interés</a></td>
-        <td width="100" align="center"><a href="#Contactame">Contáctame</a></td>
-        <td width="50" align="center"><a href="#Contacto">Contacto</a></td>
-      </tr>
-    </table>
-  </nav>
-  <br />
+  <body>
+    <header class="d-flex">
+      <div class="flex-fill">
+        <img
+          src="../assets/Foto Personal.jpg"
+          alt="Personal picture"
+          height="185"
+          width="147"
+          class="round-border float-left"
+        />
+      </div>
+      <div class="flex-fill">
+        <h1>My Personal Webpage</h1>
+      </div>
+    </header>
 
-  <main>
-    <section id="Bienvenida">
-      <h2>Bienvenidos!</h2>
-      <p>
-        Les doy la bienvenida a mi página personal! Mi nombre es Carlos Torres y
-        soy estudiante de Ingeniería de Sistemas y Computación en la Universidad
-        de Los Andes. Me apasiona la tecnología, el deporte y los videojuegos.
-      </p>
-      <p>
-        A continuación podrán encontrar más información acerca de mí, desde
-        datos académicos hasta gustos e intereses personales. Los invito a que
-        continúen leyendo y me contacten si tienen alguna duda.
-      </p>
-    </section>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light custom-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#welcome"
+                >Welcome</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about_me"
+                >About me</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#projects"
+                >Projects</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#academic-work"
+                >Academic/Work</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#contact_me"
+                >Contact me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <br />
 
-    <section id="Datos_B">
-      <h2>Datos Biográficos</h2>
-      <p>A continuación encontrarán información y datos biográficos míos:</p>
-      <table border="1" cellpadding="3" class="slidein">
-        <tr>
-          <th>Nombres</th>
-          <th>Apellidos</th>
-          <th>Edad</th>
-          <th>Sexo</th>
-          <th>Estatura</th>
-          <th>Fecha de nacimiento</th>
-          <th>Nacionalidad</th>
-          <th>Lugar de residencia</th>
-          <th>Grupo sanguíneo</th>
-          <th>RH</th>
-        </tr>
-        <tr>
-          <td>Carlos Andrés</td>
-          <td>Torres Echeverría</td>
-          <td>21 años</td>
-          <td>Masculino</td>
-          <td align="center">1.70 m</td>
-          <td align="center">21/01/2000</td>
-          <td align="center">Colombiano</td>
-          <td align="center">Bogotá, D.C</td>
-          <td align="center">A</td>
-          <td align="center">-</td>
-        </tr>
-      </table>
-    </section>
-    <br />
-
-    <section id="Datos_A">
-      <h2>Datos Académicos</h2>
-      <p>A continuación encontrarán información y datos académicos míos:</p>
-      <ul>
-        <li>Universidad: Los Andes</li>
-        <li>Programa: Ingeniería de Sistemas y Computación</li>
-        <li>Nivel: Pregrado</li>
-        <li>Semestre: 7mo</li>
-        <li>Créditos: 103</li>
-        <li>PGA: 4.03</li>
-      </ul>
-    </section>
-    <br />
-
-    <section id="Sitios">
-      <h2>Sitios de Interés</h2>
-      <p>
-        A continuación encontrarán mis sitios interés en la web, así como mis
-        videos e imágenes favoritas.
-      </p>
+    <main>
+      <section id="welcome">
+        <h2>Welcome!</h2>
+        <p>
+          Let me welcome you to my personal webpage! My name is Carlos Torres
+          and I'm a Software Engineering student at Los Andes University. I'm
+          pasionate about technology, sports and video games.
+        </p>
+        <p>
+          Below you can find more information about myself, from academic data
+          to hobbies and personal interests. Please keep reading and contact me
+          if you have any questions.
+        </p>
+      </section>
       <br />
 
-      <h3>Videos Favoritos</h3>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/CID-sYQNCew"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/5b8quYrnlTg"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/zF5Ddo9JdpY"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <br />
+      <section id="about_me">
+        <h2>About me</h2>
+        <p>
+          I was born on January 21, 2000 in Villavicencio, Meta, where I was
+          raised and went to school. I graduated from La Salle School in 2017
+          and went to study Software Engineering in Los Andes University, so I
+          moved to Bogota and I've lived here ever since. Now let me show you
+          what are some of my hobbies and interests. Also, this is my playlist,
+          hope you enjoy it!
+        </p>
+        <h4 class="text-center">
+          <iframe
+            src="https://open.spotify.com/embed/playlist/3d38tQItEOSEjSmoAgLEZV"
+            width="300"
+            height="280"
+            frameborder="0"
+            margin="auto"
+            display="block"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+        </h4>
+        <br />
+        <h3>Hobbies</h3>
+        <div class="card-group" style="justify-content: center">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="../assets\AoT Wallpaper.png"
+                  class="image-flip-card"
+                  alt="A wallpaper of Attack on Titan, my favorite anime."
+                />
+              </div>
+              <div class="flip-card-back">
+                <h4 class="card-title">Anime</h4>
+                <p class="card-text">
+                  I think we all have seen at least one anime show, and we all
+                  have had some fun watching it. Anime has become an important
+                  part of my life because it's a great way to scape reality for
+                  a moment.
+                </p>
+              </div>
+            </div>
+          </div>
 
-      <h3>Imágenes Favoritas</h3>
-      <img
-        src="../assets/Berserk Wallpaper.jpg"
-        alt="Berserk Wallpaper"
-        height="250"
-        width="450"
-      />
-      <img
-        src="../assets/AoT Wallpaper.png"
-        alt="AoT Wallpaper"
-        height="250"
-        width="450"
-      />
-      <img
-        src="../assets/Arthas Wallpaper.jpg"
-        alt="Arthas Wallpaper"
-        height="250"
-        width="450"
-      />
-      <img
-        src="../assets/LoL Wallpaper.jpg"
-        alt="LoL Wallpaper"
-        height="250"
-        width="450"
-      />
-      <br />
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="../assets\basket.jpeg"
+                  class="image-flip-card"
+                  alt="A picture of my basketball team, from when I was in highschool."
+                />
+              </div>
+              <div class="flip-card-back">
+                <h4 class="card-title">Basketball</h4>
+                <p class="card-text">
+                  I've played basketball since I was in elementary school. It
+                  started as just a way to spend recess, but as I grew up, it
+                  became one of my passions. In my last years of highschool I
+                  became part of my school's basketball team, winning some
+                  tournaments and having a lot of fun.
+                </p>
+              </div>
+            </div>
+          </div>
 
-      <h3>Enlaces de Interés</h3>
-      <ul>
-        <li>
-          Plataforma de apoyo en matemáticas:
-          <a href="https://www.wolframalpha.com/" target="_blank"
-            >WolframAlpha</a
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="../assets\Arthas Wallpaper.jpg"
+                  class="image-flip-card"
+                  alt="The Lich King wallpaper, from one of my favorite games: World of Warcraft"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h4 class="card-title">Video Games</h4>
+                <p class="card-text">
+                  I began my journey in the gaming world when I was 6 years old.
+                  By accident my father left his computer on, and my brother and
+                  I started using it. Not knowing what it was, we entered a
+                  program called "Warcraft 3". Since then, we have both been
+                  fascinated by video games, playing all kinds of them,
+                  especially RPGs and competitive games.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <h3>Abilities</h3>
+        <ul class="d-flex">
+          <li class="flex-fill">
+            <h5>Software development</h5>
+            <ul>
+              <li>Web development (Angular, Django)</li>
+              <li>Data mining (Machine Learning, Deep Learning)</li>
+              <li>Programming languages (Java, C++, Python, Js)</li>
+            </ul>
+          </li>
+          <li class="flex-fill">
+            <h5>Soft skills</h5>
+            <ul>
+              <li>Ascertive communication</li>
+              <li>Good listening</li>
+              <li>Effective team working</li>
+            </ul>
+          </li>
+          <li class="flex-fill">
+            <h5>Workplace skills</h5>
+            <ul>
+              <li>Working under pressure</li>
+              <li>Thinking outside the box</li>
+              <li>Leadership</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <br />
+      <section id="projects">
+        <h2>Projects</h2>
+        <p>
+          In my time at university, I have been able to work on various projects
+          for different subjects. The following ones are, under my
+          consideration, the best I've worked on:
+        </p>
+        <div
+          id="carouselProjects"
+          class="carousel slide carousel-fade carousel-dark"
+          data-bs-ride="carousel"
+          data-bs-interval="false"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselProjects"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselProjects"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselProjects"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h4 class="text-center">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/fUe6_T22fi8"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </h4>
+            </div>
+            <div class="carousel-item">
+              <h4 class="text-center">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/JWYDBRbgDnk"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </h4>
+            </div>
+            <div class="carousel-item">
+              <h4 class="text-center">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/JOZxqXdOyDc"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </h4>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselProjects"
+            data-bs-slide="prev"
           >
-        </li>
-        <li>
-          Plataforma para ver ánime legal:
-          <a href="https://www.crunchyroll.com/es" target="_blank"
-            >Crunchyroll</a
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselProjects"
+            data-bs-slide="next"
           >
-        </li>
-        <li>
-          Plataforma para escuchar música:
-          <a href="https://soundcloud.com/" target="_blank">Soundcloud</a>
-        </li>
-      </ul>
-    </section>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <br />
+
+      <section id="academic-work">
+        <h2>Academic formation & Working experience</h2>
+
+        <p>
+          Regarding my academic formation, as I mentioned before, I graduated
+          from La Salle School in Villavicencio, with the recognition of "Best
+          Bachelor". Other than that, all I can show are my seven semesters at
+          the university studying Software Engineering.
+        </p>
+        <img
+          src="../assets/andes.png"
+          alt="Logo of los Andes University"
+          width="450"
+          height="250"
+          class="round-border mx-auto d-block"
+        />
+        <br />
+        <p>
+          As for my working experience, since I was in fourth semester I've been
+          a double monitor at the University. I was a monitor for the courses of
+          APO1, APO2 and Data Structures (when those courses existed). After the
+          reform, I've been a mnitor for IP1 and IP2. Currently I am a monitor
+          for two sections of IP1. That's all the working experience I have
+          acquired.
+        </p>
+      </section>
+    </main>
     <br />
 
-    <section id="Contactame">
-      <h2>Contáctame</h2>
-      <p>
-        Si gustas enviarme un mensaje, a continuación puedes dejarlo junto con
-        tus datos:
-      </p>
-      <form>
-        <div>
-          <label for="nombre">Nombre</label>
-          <br />
-          <input type="text" id="nombre" />
-        </div>
-        <div>
-          <label for="correo">Correo</label>
-          <br />
-          <input type="text" id="correo" />
-        </div>
-        <div>
-          <label for="mensaje">Mensaje</label>
-          <br />
-          <textarea id="mensaje"></textarea>
-        </div>
-        <div>
-          <input type="reset" value="Borrar datos" />
-          <input type="submit" value="Enviar" />
-        </div>
-      </form>
-    </section>
-  </main>
-  <br />
-
-  <footer id="Contacto" style="background-color: rgb(240, 224, 224)">
-    <table cellpadding="15" align="center">
-      <tr>
-        <td align="center">
-          <a
-            href="https://www.facebook.com/people/Carlos-Torres/100001250455546"
-            target="_blank"
-            ><img
-              src="../assets/facebook logo.png"
-              alt="Perfil de Facebook"
-              height="30"
-              width="30"
-          /></a>
-        </td>
-        <td align="center">
-          <a href="https://www.instagram.com/carlostorres74/" target="_blank"
-            ><img
-              src="../assets/instagram logo.png"
-              alt="Perfil de Instagram"
-              height="30"
-              width="30"
-          /></a>
-        </td>
-        <td align="center">
-          <a
-            href="https://www.youtube.com/user/WereW0lf74/featured"
-            target="_blank"
-            ><img
-              src="../assets/youtube logo.png"
-              alt="Canal de Youtube"
-              height="30"
-              width="30"
-          /></a>
-        </td>
-      </tr>
-      <tr>
-        <td>Cel: +57 3212373353</td>
-        <td></td>
-        <td>
-          <a href="mailto:torres115.935@gmail.com">torres115.935@gmail.com</a>
-        </td>
-      </tr>
-    </table>
-  </footer>
-</body>
+    <footer id="contact_me" style="background-color: rgb(240, 224, 224)">
+      <div class="d-flex flex-column align-items-center">
+        <ul class="foot">
+          <li class="icons">
+            <a
+              href="https://www.facebook.com/people/Carlos-Torres/100001250455546"
+              target="_blank"
+              ><img
+                src="../assets/facebook logo.png"
+                alt="Perfil de Facebook"
+                height="35"
+                width="35"
+            /></a>
+          </li>
+          <li class="icons">
+            <a href="https://www.instagram.com/carlostorres74/" target="_blank"
+              ><img
+                src="../assets/instagram logo.png"
+                alt="Perfil de Instagram"
+                height="35"
+                width="35"
+            /></a>
+          </li>
+          <li class="icons">
+            <a
+              href="https://www.youtube.com/user/WereW0lf74/featured"
+              target="_blank"
+              ><img
+                src="../assets/youtube logo.png"
+                alt="Canal de Youtube"
+                height="35"
+                width="35"
+            /></a>
+          </li>
+        </ul>
+        <ul class="foot">
+          <li class="icons">Cel: +57 3212373353</li>
+          <li class="icons"></li>
+          <li class="icons">
+            <a href="mailto:torres115.935@gmail.com">torres115.935@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+      integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+      integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"
+    />
+  </body>
+</html>
