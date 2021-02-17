@@ -13,8 +13,9 @@ section {
   margin-top: -50px;
 }
 
+/* Modificacion: Agregue el h3 para los titulos de hobbies y abilities */
 p,
-h2 {
+h2,h3 {
   text-align: center;
 }
 
