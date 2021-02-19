@@ -14,8 +14,9 @@ section {
   margin-top: -50px;
 }
 
+/* Modificacion: Agregue el h3 para los titulos de hobbies y abilities */
 p,
-h2 {
+h2,h3 {
   text-align: center;
 }
 
@@ -93,3 +94,6 @@ header {
   padding: 10px 35px 10px 35px;
   margin: auto;
 }
+
+/* Comentarios: Muy bien organizado el CSS. Es entendible y usaste cosas interesantes como lo de las tarjetas
+que se voltean, me gusto mucho eso. Creo que la seleccion de colores pudo haber sido mejor. */
